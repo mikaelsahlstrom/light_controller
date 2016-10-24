@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
+        <script src="jquery.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            .row_padding {
+                padding-top: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row row_padding">
+                <div class="col-xs-2">
+                    <div class="btn-toolbar" role="toolbar" aria-label="Alm&auml;nna kontroller">
+                        <div class="btn-group" role="group" aria-label="Av eller p&aring;">
+                            <button id="power" type="button" class="btn btn-danger">
+                                <span class="glyphicon glyphicon-off" area-hidden="true"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-10">
+                    <div class="btn-toolbar pull-right" role="toolbar" aria-label="Ljusstyrka">
+                        <div class="btn-group" role="group" aria-label="Ljusstyrka">
+                            <button type="button" class="btn btn-primary" disabled="true">
+                                Ljusstyrka
+                            </button>
+                            <button id="light-up" type="button" class="btn btn-primary">
+                                <span class="glyphicon glyphicon-plus-sign" area-hidden="true"></span>
+                            </button>
+                            <button id="light-down" type="button" class="btn btn-primary">
+                                <span class="glyphicon glyphicon-minus-sign" area-hidden="true"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row_padding">
+                <div class="col-xs-2">
+                    &nbsp;
+                </div>
+                <div class="col-xs-10">
+                    <div class="btn-toolbar pull-right" role="toolbar" aria-label="Ljusstyrka">
+                        <div class="btn-group" role="group" aria-label="Ljusstyrka">
+                            <button type="button" class="btn btn-primary" disabled="true">
+                                Hastighet
+                            </button>
+                            <button id="speed-up" type="button" class="btn btn-primary">
+                                <span class="glyphicon glyphicon-upload" area-hidden="true"></span>
+                            </button>
+                            <button id="speed-down" type="button" class="btn btn-primary">
+                                <span class="glyphicon glyphicon-download" area-hidden="true"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row_padding">
+                <div class="col-xs-6">
+                    <div class="btn-toolbar" role="toolbar" aria-label="R&ouml;da f&auml;rger">
+                        <div class="btn-group btn-group-justified" role="group">
+                            <div class="btn-group" role="group">
+                                <button id="red-1" type="button" class="btn btn-danger">1</button>
+                            </div>
+                            <div class="btn-group" role="group">
+                                <button id="red-2" type="button" class="btn btn-danger">2</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    <div class="btn-toolbar" role="toolbar" aria-label="Gula f&auml;rger">
+                        <div class="btn-group btn-group-justified" role="group">
+                            <div class="btn-group" role="group">
+                                <button id="yellow-1" type="button" class="btn btn-warning">1</button>
+                            </div>
+                            <div class="btn-group" role="group">
+                                <button id="yellow-2" type="button" class="btn btn-warning">2</button>
+                            </div>
+                            <div class="btn-group" role="group">
+                                <button id="yellow-3" type="button" class="btn btn-warning">3</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row_padding">
+                <div class="col-xs-12">
+                    <div class="btn-toolbar" role="toolbar" aria-label="Gr&ouml;na f&auml;rger">
+                        <div class="btn-group btn-group-justified" role="group">
+                            <div class="btn-group" role="group">
+                                <button id="green-1" type="button" class="btn btn-success">1</button>
+                            </div>
+                            <div class="btn-group" role="group">
+                                <button id="green-2" type="button" class="btn btn-success">2</button>
+                            </div>
+                            <div class="btn-group" role="group">
+                                <button id="green-3" type="button" class="btn btn-success">3</button>
+                            </div>
+                            <div class="btn-group" role="group">
+                                <button id="green-4" type="button" class="btn btn-success">4</button>
+                            </div>
+                            <div class="btn-group" role="group">
+                                <button id="green-5" type="button" class="btn btn-success">5</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row_padding">
+                <div class="col-xs-12">
+                    <div class="btn-toolbar" role="toolbar" aria-label="Bl&aring;a f&auml;rger">
+                        <div class="btn-group btn-group-justified" role="group">
+                            <div class="btn-group" role="group">
+                                <button id="blue-1" type="button" class="btn btn-info">1</button>
+                            </div>
+                            <div class="btn-group" role="group">
+                                <button id="blue-2" type="button" class="btn btn-info">2</button>
+                            </div>
+                            <div class="btn-group" role="group">
+                                <button id="blue-3" type="button" class="btn btn-info">3</button>
+                            </div>
+                            <div class="btn-group" role="group">
+                                <button id="blue-4" type="button" class="btn btn-info">4</button>
+                            </div>
+                            <div class="btn-group" role="group">
+                                <button id="blue-5" type="button" class="btn btn-info">5</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row_padding">
+                <div class="col-xs-12">
+                    <div class="btn-toolbar" role="toolbar" aria-label="Vita f&auml;rger">
+                        <div class="btn-group btn-group-justified" role="group">
+                            <div class="btn-group" role="group">
+                                <button id="white-1" type="button" class="btn btn-default">1</button>
+                            </div>
+                            <div class="btn-group" role="group">
+                                <button id="white-2" type="button" class="btn btn-default">2</button>
+                            </div>
+                            <div class="btn-group" role="group">
+                                <button id="white-3" type="button" class="btn btn-default">3</button>
+                            </div>
+                            <div class="btn-group" role="group">
+                                <button id="white-4" type="button" class="btn btn-default">4</button>
+                            </div>
+                            <div class="btn-group" role="group">
+                                <button id="white-5" type="button" class="btn btn-default">5</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row_padding">
+                <div class="col-xs-12">
+                    <div class="btn-toolbar" role="toolbar" aria-label="Program">
+                        <div class="btn-group btn-group-justified" role="group">
+                            <div class="btn-group" role="group">
+                                <button id="jump-3" type="button" class="btn btn-primary">Jump 3</button>
+                            </div>
+                            <div class="btn-group" role="group">
+                                <button id="jump-7" type="button" class="btn btn-primary">Jump 7</button>
+                            </div>
+                            <div class="btn-group" role="group">
+                                <button id="fade-3" type="button" class="btn btn-primary">Fade 3</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

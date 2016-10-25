@@ -179,12 +179,12 @@
         <script>
             function request(request_do)
             {
-                $.get("request.html?do=" + request_do, null);
+
             }
 
-            $("#power").click(request("power"));
-            $("#light-up").click(request("light-up"));
-            $("#light-down").click(request("light-down"));
+            $("#power").click(function () {$.get("request.html?do=power", null);});
+            $("#light-up").click(function () {$.get("request.html?do=light-up", null);});
+            $("#light-down").click(function () {$.get("request.html?do=light-down", null);});
         </script>
     </body>
 </html>

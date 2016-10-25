@@ -176,5 +176,15 @@
                 </div>
             </div>
         </div>
+        <script>
+            function request(request_do)
+            {
+                $.get("request.html?do=" + request_do, null);
+            }
+
+            $("#power").click(request("power"));
+            $("#light-up").click(request("light-up"));
+            $("#light-down").click(request("light-down"));
+        </script>
     </body>
 </html>

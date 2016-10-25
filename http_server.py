@@ -42,7 +42,7 @@ class LightControlServer(BaseHTTPRequestHandler):
             self.wfile.write(bytes("404", "utf-8"))
 
 def run():
-    server_address = ('127.0.0.1', 8081)
+    server_address = ('127.0.0.1', 80)
     httpd = HTTPServer(server_address, LightControlServer)
     httpd.serve_forever()
 
